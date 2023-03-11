@@ -398,8 +398,8 @@ $(ARM_ROOT)/usr/include/id3tag.h: $(DOWNLOADS)/libid3tag-0.15.1b.tar.gz
         }
 
 expat: $(ARM_ROOT)/usr/include/expat.h
-$(ARM_ROOT)/usr/include/expat.h: $(DOWNLOADS)/expat-2.1.0.tar.gz
-	cd build && tar xf $(DOWNLOADS)/expat-2.1.0.tar.gz && cd expat-2.1.0 && { \
+$(ARM_ROOT)/usr/include/expat.h: $(DOWNLOADS)/expat-2.5.0.tar.gz
+	cd build && tar xf $(DOWNLOADS)/expat-2.5.0.tar.gz && cd expat-2.5.0 && { \
                 ./configure --prefix=$(ARM_APPROOT) --host=$(T_ARCH); \
                 make $(JOBS) install >/$(LOGS)/libexpat.log 2>&1; \
         }
